@@ -1,0 +1,389 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f8ff; /* AliceBlue */
+    color: #333; /* Dark Gray */
+}
+
+header {
+    background-color: #1e90ff; /* DodgerBlue */
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffebcd; /* BlanchedAlmond */
+}
+
+main {
+    padding: 2em;
+}
+
+.hero {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 2em 0;
+}
+
+.hero h2 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #1e90ff; /* DodgerBlue */
+}
+
+.about, .products, .contact {
+    margin: 2em 0;
+}
+
+.about p, .contact p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.product-category {
+    margin-bottom: 2em;
+}
+
+.product-category h3 {
+    font-size: 2em;
+    color: #1e90ff; /* DodgerBlue */
+    border-bottom: 2px solid #87cefa; /* LightSkyBlue */
+    padding-bottom: 0.5em;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-item {
+    flex: 1 1 calc(33.333% - 2em);
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-item h4 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.product-item p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    margin: 0.5em 0 0.2em;
+    font-size: 1.1em;
+    color: #333;
+}
+
+form input, form textarea, form button {
+    padding: 0.8em;
+    margin: 0.5em 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+form input:focus, form textarea:focus {
+    outline: none;
+    border-color: #1e90ff; /* DodgerBlue */
+}
+
+form button {
+    background-color: #1e90ff; /* DodgerBlue */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #187bcd; /* Slightly darker blue */
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #1e90ff; /* DodgerBlue */
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.contact-info {
+    margin-top: 2em;
+    background-color: #f9f9f9;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h3 {
+    font-size: 1.5em;
+    color: #1e90ff; /* DodgerBlue */
+}
+
+.contact-info p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/*edición extra, puede cambiar código o regresar*/
+
+/* Estilos Generales */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #f0f8ff 0%, #1e90ff 100%); /* De AliceBlue a DodgerBlue */
+    color: #333; /* Dark Gray */
+}
+
+header {
+    background: linear-gradient(90deg, #1e90ff 0%, #00008b 100%); /* De DodgerBlue a DarkBlue */
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 3em; /* Tamaño aumentado */
+    font-weight: bold;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffebcd; /* BlanchedAlmond */
+}
+
+main {
+    padding: 2em;
+}
+
+.hero {
+    text-align: center;
+    background: linear-gradient(180deg, #87cefa 0%, #f0f8ff 100%); /* De LightSkyBlue a AliceBlue */
+    padding: 2em 0;
+    color: #00008b; /* DarkBlue */
+}
+
+.hero h2 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.about, .products, .contact {
+    margin: 2em 0;
+}
+
+.about p, .contact p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.product-category {
+    margin-bottom: 2em;
+}
+
+.product-category h3 {
+    font-size: 2em;
+    background: linear-gradient(90deg, #1e90ff 0%, #87cefa 100%); /* De DodgerBlue a LightSkyBlue */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid #87cefa; /* LightSkyBlue */
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-item {
+    flex: 1 1 calc(33.333% - 2em);
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-item h4 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.product-item p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1em;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    margin: 0.5em 0 0.2em;
+    font-size: 1.1em;
+    color: #333;
+}
+
+form input, form textarea, form button {
+    padding: 0.8em;
+    margin: 0.5em 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+form input:focus, form textarea:focus {
+    outline: none;
+    border-color: #1e90ff; /* DodgerBlue */
+}
+
+form button {
+    background: linear-gradient(90deg, #1e90ff 0%, #00008b 100%); /* De DodgerBlue a DarkBlue */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: linear-gradient(90deg, #00008b 0%, #1e90ff 100%); /* De DarkBlue a DodgerBlue */
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background: linear-gradient(90deg, #1e90ff 0%, #00008b 100%); /* De DodgerBlue a DarkBlue */
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.contact-info {
+    margin-top: 2em;
+    background: #f9f9f9;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h3 {
+    font-size: 1.5em;
+    color: #1e90ff; /* DodgerBlue */
+}
+
+.contact-info p {
+    font-size: 1.2em;
+    color: #666;
+}
+/*nuevo código aquí*/
